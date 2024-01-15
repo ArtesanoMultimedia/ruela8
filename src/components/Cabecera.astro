@@ -1,0 +1,29 @@
+---
+import Container from "./Container.astro";
+---
+<section class="relative bg-cover bg-no-repeat bg-center bg-fixed dark:text-white" style="background-image: url('/images/exterior.jpg');">
+<a id="inicio" class="anchor"></a>
+
+    <div class="absolute inset-0 bg-amber/30 backdrop-blur-sm dark:hidden"></div>
+    <div class="absolute inset-0 bg-white/30 backdrop-blur-sm dark:hidden"></div>
+
+    <div class="hidden absolute inset-0 bg-amber/60 backdrop-blur-sm dark:block"></div>
+    <div class="hidden absolute inset-0 bg-black/30 backdrop-blur-sm dark:block"></div>
+
+    <Container>
+        <div class="text-center py-36 lg:py-48 relative">
+            <h1 class="text-6xl font-bold mb-6 text-gray-900 dark:text-white bruno">Descubre <img src="/images/logo-xl.png" alt="Ruela 8" class="inline -mt-7" /></h1>
+            <p class="bruno text-4xl mb-8 text-gray-900 dark:text-gray-300">La sinfonía de una década</p>
+
+            <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                <a href="https://buy.stripe.com/9AQ3fveWVbk894Q4gg" target="_blank" rel="noopener noreferrer"
+                   class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                    <span class="relative text-base font-semibold text-white">Obtén tu copia</span>
+                </a>
+                <a href="#album" class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
+                    <span class="relative text-base font-semibold text-primary dark:text-white">Explora</span>
+                </a>
+            </div>
+        </div>
+    </Container>
+</section>

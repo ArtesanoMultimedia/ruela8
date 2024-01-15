@@ -1,0 +1,57 @@
+---
+import Container from "./Container.astro"
+---
+<a class="anchor" id="album"></a>
+<div class="relative bg-white dark:bg-gray-900 pt-8">
+        <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+            <div class="blur-[106px] h-1/2 bg-gradient-to-br from-primary to-red-400"></div>
+            <div class="blur-[106px] mt-52 h-2/3 bg-gradient-to-r from-amber-700 to-amber-300"></div>
+        </div>
+    <Container>
+        <div class="relative ml-auto">
+            <div class="xl:w-2/3 mx-auto">
+                <div class="flex md:flex-row flex-col">
+                    <div class="sm:w-full md:w-1/2 lg:w-1/3">
+                        <img src="/images/portada.jpg" alt="Portada disco Ruela 8" class="w-full rounded-lg"/>
+                    </div>
+                    <div class="flex flex-col sm:w-full md:w-1/2 lg:w-2/3 p-6 ">
+                        <img src="/images/logo.png" alt="Logo Ruela 8" class="w-28"/>
+                        <p class="xl:text-3xl text-2xl dark:text-gray-300 mb-6 bruno">La Sinfonía de una
+                            Década</p>
+                        <p class="text-justify text-primary bruno text-xl dark:text-gray-300 mb-6">Ruela 8 propone una evolución en el sonido tradicional de las tunas. Una apuesta por la riqueza musical que hemos recogido a lo largo de nuestros viajes. Este proyecto, fruto de una labor minuciosa y comprometida, resume nuestro viaje sonoro de la última década.<br />¡Que lo disfruten!</p>
+                        <p class="dark:text-white">P.V.P.: 15 € (imp. incluidos). Envío España: 4,95 €</p>
+                        <p class="text-xs">Para envíos fuera de España, contacta con nosotros</p>
+                        <a
+                                href="https://buy.stripe.com/9AQ3fveWVbk894Q4gg"
+                                class="mt-4 relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+                        >
+                      <span
+                              class="relative text-2xl font-semibold text-white"
+                      >Cómpralo Ahora</span
+                      >
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full mx-auto">
+                <div class="py-8 px-8 rounded-2xl mt-16 border-y border-gray-100 dark:border-gray-800 flex flex-col bg-amber-500 dark:bg-amber-800">
+                    <h2 class="text-center dark:text-white text-3xl font-bold mb-6 w-full bruno">Las claves</h2>
+                    <div class="flex justify-between gap-6">
+                        <div class="text-left">
+                            <h4 class="text-xl font-semibold text-primary dark:text-white">Búsqueda de un Sonido Propio</h4>
+                            <p class="mt-2 text-gray-900 dark:text-gray-200 md:text-justify">Este álbum es un testimonio de nuestra búsqueda incansable por un sonido único, una fusión audaz que celebra la rica herencia musical y al mismo tiempo traza su propio camino creativo.</p>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="text-xl font-semibold text-primary dark:text-white">Esencia de Nuestro Estilo</h4>
+                            <p class="mt-2 text-gray-900 dark:text-gray-200 md:text-justify">Ruela 8 captura la esencia de nuestra tuna con un enfoque fresco. Cada pista destila el alma de la música folklórica, refinada y enriquecida con la madurez de los años y la pasión por lo que nos gusta.</p>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="text-xl font-semibold text-primary dark:text-white">Aventuras y Viajes</h4>
+                            <p class="mt-2 text-gray-900 dark:text-gray-200 md:text-justify">Cada canción es un diario de viaje. Desde la vibrante energía de los ritmos afro-peruanos hasta la nostalgia de las melodías gallegas. Ruela 8 es un pasaporte sonoro que invita a los oyentes a viajar con nosotros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Container>
+</div>
