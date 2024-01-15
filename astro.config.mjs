@@ -15,7 +15,6 @@ export default defineConfig({
       experimentalReactChildren: true,
     })
   ],
-  output: "server",
   adapter: node({
     mode: "standalone"
   }),
