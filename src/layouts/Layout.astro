@@ -36,7 +36,7 @@ import AppHeader from "../components/AppHeader.astro"
     <meta name="twitter:label6" content="Género"/>
     <meta name="twitter:data6" content="Tuna"/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 <body class="bg-white dark:bg-gray-900">
 	<AppHeader/>
