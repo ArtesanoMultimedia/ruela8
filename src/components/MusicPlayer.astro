@@ -307,7 +307,7 @@ import Container from "./Container.astro";
 </style>
 
 
-<script client:visible src="https://cdn.jsdelivr.net/npm/amplitudejs@5.2.0/dist/amplitude.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/amplitudejs@5.2.0/dist/amplitude.js"></script>
 <script is:inline>
     Amplitude.init({
         "bindings": {
@@ -443,6 +443,6 @@ import Container from "./Container.astro";
     });
 
     window.onkeydown = function (e) {
-        return !(e.keyCode == 32);
+        return !(e.keyCode === 32);
     };
 </script>
