@@ -23,5 +23,5 @@ export default defineConfig({
       noExternal: ["react-icons"]
     }
   },
-  site: "https://ruela8.tunaderechosantiago.com"
+  site: "https://ruela8.netlify.app/"
 });
