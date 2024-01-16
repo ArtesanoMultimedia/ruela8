@@ -38,17 +38,17 @@ import ThemeIcon from "./ThemeIcon.astro";
 
                         <ul class="tracking-wide font-bold text-xl flex-col flex lg:flex-row gap-6 lg:gap-0">
                             <li>
-                                <a href="#inicio" class="block md:px-4 transition hover:text-primary">
+                                <a href="#inicio" class="block md:px-4 transition hover:text-primary menu-link">
                                     <span>Inicio</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#album" class="block md:px-4 transition hover:text-primary">
+                                <a href="#album" class="block md:px-4 transition hover:text-primary menu-link">
                                     <span>El Álbum</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#escucha" class="block md:px-4 transition hover:text-primary">
+                                <a href="#escucha" class="block md:px-4 transition hover:text-primary menu-link">
                                     <span>Escucha</span>
                                 </a>
                             </li>
@@ -76,9 +76,22 @@ import ThemeIcon from "./ThemeIcon.astro";
         </Container>
     </nav>
 </header>
-<div class="bg-amber-500 absolute inset-0 h-24">
 
-</div>
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const menuLinks = document.querySelectorAll('.menu-link');
+        const toggleNav = document.getElementById('toggle_nav');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (toggleNav.checked) {
+                    toggleNav.checked = false;
+                }
+            });
+        });
+    });
+</script>
+
 
 <style>
     #toggle_nav:checked ~ div #hamburger #line
